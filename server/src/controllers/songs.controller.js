@@ -12,7 +12,6 @@ const getAllByArtistId = function (req, res) {
 
 // true get all
 const getAll = function (req, res) {
-  console.log('hi');
   res.send(songsService.getAll());
 };
 

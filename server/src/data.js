@@ -7,6 +7,13 @@ module.exports = {
         last: 'Ocean',
       },
     },
+    {
+      _id: '1',
+      name: {
+        first: 'Post',
+        last: 'Malone',
+      }
+    }
   ],
   Songs: [
     {
@@ -25,6 +32,14 @@ module.exports = {
       Lyrics:
         "a tornado flew around my room before you came excuse the mess it made, it usually doesn't rain in southern california, much like arizona my eyes don't shed tears, but boy they pour when... i'm thinking 'bout you (ooh no, no, no) i've been thinking 'bout you (you know, know, know) i've been thinking 'bout you do you think about me still? do ya, do ya? or do you not think so far ahead cause i been thinking bout forever, ooh or do you not think so far ahead cause i been thinking 'bout forever, ooh no, i don't like you, i just thought you were cool enough to kick it got a beach house i could sell you in idaho, since you think i don't love you i just thought you were cute, that's why i kissed you got a fighter jet, i don't get to fly it though i'm lying down i'm thinking 'bout you (ooh no, no, no) i've been thinking 'bout you (you know, know, know) i've been thinking 'bout you do you think about me still? do ya, do ya? or do you not think so far ahead cause i been thinking bout forever, ooh or do you not think so far ahead cause i been thinking 'bout forever, ooh yes of course i remember, how could i forget how you feel? you know you were my first time, a new feel it will never get old, not in my soul, not in my spirit, keep it alive we'll go down this road 'til it turns from color to black and white or do you not think so far ahead cause i been thinking bout forever, ooh or do you not think so far ahead cause i been thinking 'bout forever, ooh",
     },
+    {
+      _id: 2,
+      Title: 'Novacane',
+      Album: 'Single',
+      Genre: 'Pop',
+      Lyrics:
+        "i think i started somethin', i got what i wanted did-didn't, i can't feel nothin', superhuman even when i'm fuckin', viagra poppin' every single record, autotunin' zero emotion, muted emotion pitch corrected, computed emotion, uh-huh i blame it on the model broad with the hollywood smile, ow stripper booty and a rack like wow brain like berkeley met her at coachella i went to see jigga, she went to see z trip perfect i took a seat on the ice cold lawn she handed me a ice blue bong, whatever she said she wanna be a dentist really badly she's in school paying for tuition doing porn in the valley at least you working but girl i can't feel my face what are we smokin' anyway? she said don't let the high go to waste but can you taste a little taste novacane, baby, baby novacane, baby, i want you fuck me good, fuck me long, fuck me numb love me now, when i'm gone love me none love me none, love me none numb, numb, numb, numb sink full of dishes, pacing in the kitchen cocaine for breakfast yikes bed full of women flip on a tripod, little red light on shooting, i'm feeling like stanley kubrick this is some visionary shit been tryna film pleasure with my eyes wide shut but it keeps on moving i blame it on the model broad with the hollywood smile stripper booty with a rack like wow i'll never forget you you put me on a feeling i never had, never had, never had (never) and ever since i've been tryna get it back and pick it up and put it back now i'm something like the chemist on campus but there's no drug around quite like what i found in you, you i still can't feel my face what am i smokin' anyway? she said don't let the high go to waste but can you taste a little taste? novacane, baby, baby novacane, baby, i want you fuck me good, fuck me long, fuck me numb love me now, when i'm gone, love me none love me none, love me none numb, numb, numb, numb novacane, novacane, novacane, novacane, novacane numb the pain, numb the pain, numb the pain numb the pain, numb the pain novacane, novacane, novacane, novacane, novacane for the pain, for the pain novacane, novacane pretty girls involved with me makin' pretty love to me, pretty, pity, pity all the pretty girls involved with me makin' pretty love to me, pretty, pity, pity i can't feel a thing, i can't feel, can't feel a thing can't feel a thing, can't feel, feel, feel, feel her i can't feel, feel her novacane, novacane, novacane i can't feel, feel her novacane for the pain, for the pain i can't, can't feel, feel her, feel her novacane, novacane, cane, cane, cane",
+    },
   ],
   Artists_Songs: [
     {
@@ -36,6 +51,11 @@ module.exports = {
       _id: 1,
       Artist_id: 0,
       Song_id: 1,
+    },
+    {
+      _id: 2,
+      Artist_id: 0,
+      Song_id: 2,
     },
   ],
 };
