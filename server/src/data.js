@@ -1,223 +1,41 @@
 module.exports = {
-    Accounts: [
-        {
-          '_id': '0',
-          'name': {
-            'first': 'Deidre',
-            'last': 'Hayes'
-          },
-          'email': 'deidre.hayes@undefined.me',
-          'phone': '+1 (839) 577-3100',
-          'address': '507 Church Avenue, Heil, Wyoming, 1754'
-        },
-        {
-          '_id': '1',
-          'name': {
-            'first': 'Maldonado',
-            'last': 'Sellers'
-          },
-          'email': 'maldonado.sellers@undefined.biz',
-          'phone': '+1 (834) 573-2841',
-          'address': '286 Hewes Street, Abiquiu, Maine, 2447'
-        },
-        {
-          '_id': '2',
-          'name': {
-            'first': 'Elvia',
-            'last': 'Aguilar'
-          },
-          'email': 'elvia.aguilar@undefined.io',
-          'phone': '+1 (826) 486-2932',
-          'address': '457 Buffalo Avenue, Caberfae, Connecticut, 2648'
-        },
-        {
-          '_id': '3',
-          'name': {
-            'first': 'Chris',
-            'last': 'Mullins'
-          },
-          'email': 'chris.mullins@undefined.org',
-          'phone': '+1 (884) 425-2397',
-          'address': '642 Vandalia Avenue, Driftwood, California, 213'
-        },
-        {
-          '_id': '4',
-          'name': {
-            'first': 'Vargas',
-            'last': 'Oneal'
-          },
-          'email': 'vargas.oneal@undefined.info',
-          'phone': '+1 (893) 576-3106',
-          'address': '413 Bedford Avenue, Bynum, Federated States Of Micronesia, 1793'
-        }
-    ],
-    Cars: [
+  Artists: [
     {
-        '_id': 0,
-        'Name': 'chevrolet chevelle malibu',
-        'Miles_per_Gallon': 18,
-        'Cylinders': 8,
-        'Displacement': 307,
-        'Horsepower': 130,
-        'Weight_in_lbs': 3504,
-        'Acceleration': 12,
-        'Year': '1970-01-01',
-        'Origin': 'USA'
+      _id: '0',
+      name: {
+        first: 'Frank',
+        last: 'Ocean',
+      },
+    },
+  ],
+  Songs: [
+    {
+      _id: 0,
+      Title: 'Pyramids',
+      Album: 'Channel Orange',
+      Genre: 'Pop',
+      Lyrics:
+        "oh, oh, oh-oh set the cheetahs on the loose oh, oh, oh-oh there's a thief out on the move oh, oh, oh-ohh underneath our legion's view oh, oh, oh-ohh they have taken cleopatra, cleopatra run, run, run, come back for my glory bring her back to me run, run, run, the crown of our pharaoh the throne of our queen is empty we'll run to the future, shinin' like diamonds in a rocky world, rocky-rocky world our skin like bronze, and our hair like cashmere as we march to rhythm on the palace floor chandeliers inside the pyramids tremble from the force cymbals crash inside the pyramids voices fill up the halls oh, oh, oh-ohh set the cheetahs on the loose ah, ay, ayy there's a thief out on the move oh, oh, oh-uuh underneath our legion's view ahh, ay, ay, ay they have taken cleopatra, cleopatra the jewel of africa, jewel what good is a jewel that ain't still precious? how could you run off on me? how could you run off on us? you feel like god inside that gold i found you layin' down with samson, and his full head of hair i found my black queen cleopatra bad dreams, cleopatra oh, oh, ohh-ohh, remove her send the cheetahs to the tomb ooh, oh, our war is over our queen has met her doom ooh, no more she lives no more serpents in her room ooh, no more he has killed cleopatra, cleopatra big sun coming strong through the motel blinds wake up to your girl for now, let's call her cleopatra, cleopatra i watch you fix your hair then put your panties on in the mirror, cleopatra then your lipstick, cleopatra then your six-inch heels, catch her she's headed to the pyramid she's working at the pyramid tonight working at the pyramid working at the pyramid tonight working at the pyramid working at the pyramid tonight working at the pyramid working at the pyramid tonight working at the pyramid working at the pyramid tonight pimpin' in my convos bubbles in my champagne, let it be some jazz playin' top floor motel suite, twistin' my cigars floor model tv with the vcr got rubies in my damn chain whip ain't got no gas tank, but it still got woodgrain got your girl working for me hit the strip and my bills paid, that keep my bills paid hit the strip and my bills paid, keep a nigga bills paid she's working at the pyramid tonight working at the pyramid working at the pyramid tonight working at the pyramid working at the pyramid tonight working at the pyramid working at the pyramid tonight working at the pyramid you showed up after work, i'm bathin' your body touchin' you places only i know you're wet and you're warm just like our bathwater can we make love before you go? the way you say my name makes me feel like i'm that nigga but i'm still unemployed you say it's big but you take it ride, cowgirl but your love ain't free no more, baby but your love ain't free no more she's working at the pyramid tonight working at the pyramid working at the pyramid tonight working at the pyramid (that's right) working at the pyramid tonight working at the pyramid working at the pyramid tonight working at the pyramid working at the pyramid tonight",
     },
     {
-        '_id': 1,
-        'Name': 'buick skylark 320',
-        'Miles_per_Gallon': 15,
-        'Cylinders': 8,
-        'Displacement': 350,
-        'Horsepower': 165,
-        'Weight_in_lbs': 3693,
-        'Acceleration': 11.5,
-        'Year': '1970-01-01',
-        'Origin': 'USA'
+      _id: 1,
+      Title: 'Thinkin Bout You',
+      Album: 'Channel Orange',
+      Genre: 'Pop',
+      Lyrics:
+        "a tornado flew around my room before you came excuse the mess it made, it usually doesn't rain in southern california, much like arizona my eyes don't shed tears, but boy they pour when... i'm thinking 'bout you (ooh no, no, no) i've been thinking 'bout you (you know, know, know) i've been thinking 'bout you do you think about me still? do ya, do ya? or do you not think so far ahead cause i been thinking bout forever, ooh or do you not think so far ahead cause i been thinking 'bout forever, ooh no, i don't like you, i just thought you were cool enough to kick it got a beach house i could sell you in idaho, since you think i don't love you i just thought you were cute, that's why i kissed you got a fighter jet, i don't get to fly it though i'm lying down i'm thinking 'bout you (ooh no, no, no) i've been thinking 'bout you (you know, know, know) i've been thinking 'bout you do you think about me still? do ya, do ya? or do you not think so far ahead cause i been thinking bout forever, ooh or do you not think so far ahead cause i been thinking 'bout forever, ooh yes of course i remember, how could i forget how you feel? you know you were my first time, a new feel it will never get old, not in my soul, not in my spirit, keep it alive we'll go down this road 'til it turns from color to black and white or do you not think so far ahead cause i been thinking bout forever, ooh or do you not think so far ahead cause i been thinking 'bout forever, ooh",
+    },
+  ],
+  Artists_Songs: [
+    {
+      _id: 0,
+      Artist_id: 0,
+      Song_id: 0,
     },
     {
-        '_id': 2,
-        'Name': 'plymouth satellite',
-        'Miles_per_Gallon': 18,
-        'Cylinders': 8,
-        'Displacement': 318,
-        'Horsepower': 150,
-        'Weight_in_lbs': 3436,
-        'Acceleration': 11,
-        'Year': '1970-01-01',
-        'Origin': 'USA'
+      _id: 1,
+      Artist_id: 0,
+      Song_id: 1,
     },
-    {
-        '_id': 3,
-        'Name': 'amc rebel sst',
-        'Miles_per_Gallon': 16,
-        'Cylinders': 8,
-        'Displacement': 304,
-        'Horsepower': 150,
-        'Weight_in_lbs': 3433,
-        'Acceleration': 12,
-        'Year': '1970-01-01',
-        'Origin': 'USA'
-    },
-    {
-        '_id': 4,
-        'Name': 'ford torino',
-        'Miles_per_Gallon': 17,
-        'Cylinders': 8,
-        'Displacement': 302,
-        'Horsepower': 140,
-        'Weight_in_lbs': 3449,
-        'Acceleration': 10.5,
-        'Year': '1970-01-01',
-        'Origin': 'USA'
-    },
-    {
-        '_id': 5,
-        'Name': 'ford galaxie 500',
-        'Miles_per_Gallon': 15,
-        'Cylinders': 8,
-        'Displacement': 429,
-        'Horsepower': 198,
-        'Weight_in_lbs': 4341,
-        'Acceleration': 10,
-        'Year': '1970-01-01',
-        'Origin': 'USA'
-    },
-    {
-        '_id': 6,
-        'Name': 'chevrolet impala',
-        'Miles_per_Gallon': 14,
-        'Cylinders': 8,
-        'Displacement': 454,
-        'Horsepower': 220,
-        'Weight_in_lbs': 4354,
-        'Acceleration': 9,
-        'Year': '1970-01-01',
-        'Origin': 'USA'
-    },
-    {
-        '_id': 7,
-        'Name': 'plymouth fury iii',
-        'Miles_per_Gallon': 14,
-        'Cylinders': 8,
-        'Displacement': 440,
-        'Horsepower': 215,
-        'Weight_in_lbs': 4312,
-        'Acceleration': 8.5,
-        'Year': '1970-01-01',
-        'Origin': 'USA'
-    },
-    {
-        '_id': 8,
-        'Name': 'pontiac catalina',
-        'Miles_per_Gallon': 14,
-        'Cylinders': 8,
-        'Displacement': 455,
-        'Horsepower': 225,
-        'Weight_in_lbs': 4425,
-        'Acceleration': 10,
-        'Year': '1970-01-01',
-        'Origin': 'USA'
-    },
-    {
-        '_id': 9,
-        'Name': 'amc ambassador dpl',
-        'Miles_per_Gallon': 15,
-        'Cylinders': 8,
-        'Displacement': 390,
-        'Horsepower': 190,
-        'Weight_in_lbs': 3850,
-        'Acceleration': 8.5,
-        'Year': '1970-01-01',
-        'Origin': 'USA'
-    }
-  ], 
-  Accounts_Cars: [
-    {
-        '_id': 0,
-        'Account_id': 0,
-        'Car_id': 0
-    },
-    {
-        '_id': 1,
-        'Account_id': 0,
-        'Car_id': 1
-    },
-    {
-        '_id': 2,
-        'Account_id': 1,
-        'Car_id': 2
-    },
-    {
-        '_id': 3,
-        'Account_id': 3,
-        'Car_id': 3
-    },
-    {
-        '_id': 4,
-        'Account_id': 3,
-        'Car_id': 5
-    },
-    {
-        '_id': 5,
-        'Account_id': 3,
-        'Car_id': 7
-    },
-    {
-        '_id': 6,
-        'Account_id': 4,
-        'Car_id': 6
-    },
-    {
-        '_id': 7,
-        'Account_id': 4,
-        'Car_id': 4
-    },
-    {
-        '_id': 8,
-        'Account_id': 4,
-        'Car_id': 8
-    }
-  ]
-}
+  ],
+};

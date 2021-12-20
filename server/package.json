@@ -1,7 +1,7 @@
 {
-  "name": "sample-node-api",
+  "name": "trackhouse-api",
   "version": "1.0.0",
-  "description": "Zowe sample node API",
+  "description": "Track House API",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon src/index.js",
