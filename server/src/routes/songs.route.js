@@ -5,7 +5,7 @@ const songsController = require('../controllers/songs.controller');
 
 router.route('/:_id').get(songsController.getById)
 
-router.route('/artist/:_id').get(songsController.getAllByArtistId);
+router.route('/artists/:_id').get(songsController.getAllByArtistId);
 
 router.route('/').get(songsController.getAll);
 
