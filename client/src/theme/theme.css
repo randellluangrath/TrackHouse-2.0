@@ -1,0 +1,13 @@
+@import 'antd-overrides.css';
+
+/*
+* Global application theme.
+* Framework overrides and customization goes here.
+*/
+
+html, body {
+  background: #f8f8f8;
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+}

@@ -1,0 +1,17 @@
+@import '~antd/dist/antd.css';
+
+.ant-layout-header > * {
+  color: white;
+}
+
+.ant-layout-content {
+  padding: 50px;
+  height: 100vh;
+}
+
+.ant-layout-footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
