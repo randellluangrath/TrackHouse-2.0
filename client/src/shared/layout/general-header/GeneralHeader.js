@@ -5,7 +5,8 @@ import AppTitle from '../../typography/title/AppTitle';
 const { Header } = Layout;
 
 const GeneralHeader = (props) => {
-  return <Header><AppTitle title={props.title} /></Header>;
+  const header = props.header;
+  return <Header><AppTitle>{header.title}</AppTitle></Header>;
 };
 
 export default GeneralHeader;

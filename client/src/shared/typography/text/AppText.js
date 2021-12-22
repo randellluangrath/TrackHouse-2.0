@@ -1,7 +1,7 @@
 import React from 'react';
 
 const AppText = (props) => {
-  return <p>{props.text}</p>;
+  return <p>{props.children}</p>;
 };
 
 export default AppText;

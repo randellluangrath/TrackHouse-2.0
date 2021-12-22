@@ -13,7 +13,7 @@ const App = () => {
   };
 
   return (
-    <GeneralLayout props={layout}><p>Project Me</p></GeneralLayout>
+    <GeneralLayout layout={layout}><p>Project Me</p></GeneralLayout>
   );
 }
 
