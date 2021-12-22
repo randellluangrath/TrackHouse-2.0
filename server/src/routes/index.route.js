@@ -1,7 +1,12 @@
 const express = require('express');
+
+const artists = require('./artists.route')
+
 const songs = require('./songs.route');
 
 const router = express.Router();
+
+router.use('/artists', artists)
 
 router.use('/songs', songs);
 

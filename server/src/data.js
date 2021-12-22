@@ -12,8 +12,8 @@ module.exports = {
       name: {
         first: 'Post',
         last: 'Malone',
-      }
-    }
+      },
+    },
   ],
   Songs: [
     {
@@ -34,6 +34,22 @@ module.exports = {
     },
     {
       _id: 2,
+      Title: 'Forrest Gump',
+      Album: 'Single',
+      Genre: 'Pop',
+      Lyrics:
+        "i wanna see your pom-poms from the stands come on, come on my fingertips and my lips they burn from the cigarettes forrest gump you run my mind, boy running on my mind, boy forrest gump i know you, forrest i know you wouldn't hurt a beetle but you're so buff and so strong i'm nervous, forrest forrest gump my fingertips and my lips they burn from the cigarettes forrest gump you run my mind, boy running on my mind, boy forrest gump i saw your game, forrest (well, all eyes are on number forty-four) i was screaming, run forty-four but you kept running past the end zone (he could just be the stupidest son of a bitch alive) oh, where'd you go, forrest? (sure is fast) forrest gump my fingertips and my lips they burn from the cigarettes forrest gump you run my mind, boy running on my mind, boy forrest gump forrest green, forrest blues i'm remembering you if this is love, i know it's true i won't forget you (you, you, oh, you, you) yeah it's for you, forrest (no, no, no, no) (it's you, you, oh, you, you) it's for you, forrest forrest gump",
+    },
+    {
+      _id: 3,
+      Title: 'Super Rich Kids',
+      Album: 'Single',
+      Genre: 'Pop',
+      Lyrics:
+        "too many bottles of this wine we can't pronounce too many bowls of that green, no lucky charms the maids come around too much parents ain't around enough too many joy rides in daddy's jaguar too many white lies and white lines super rich kids with nothing but loose ends super rich kids with nothing but fake friends start my day up on the roof there's nothing like this type of view point the clicker at the tube i prefer expensive news new car, new girl new ice, new glass new watch, good times, babe it's good times, yeah she wash my back three times a day this shower head feels so amazing we'll both be high, the help don't stare they just walk by, they must don't care a million one, a million two a hundred more will never do too many bottles of this wine we can't pronounce too many bowls of that green, no lucky charms the maids come around too much parents ain't around enough too many joyrides in daddy's jaguar too many white lies and white lines super rich kids with nothing but loose ends super rich kids with nothing but fake friends real love, i'm searching for a real love oh, real love, i'm searching for a real love oh, real love alright, close your eyes to what you can't imagine we are the xanny-gnashing caddy-smashing, bratty ass he mad, he snatched his daddy's jag and used the shit for batting practice adamant and he thrashing purchasing crappy grams with half the hand of cash you handed panic and patch me up pappy done latch-keyed us toying with raggy anns and mammy done had enough brash as fuck, breachin' all these aqueducts don't believe us, treat us like we can't erupt, yup we end our day up on the roof i say i'll jump, i never do but when i'm drunk i act a fool talking 'bout, do they sew wings on tailored suits i'm on that ledge, she grabs my arm she slaps my hand it's good times, yeah sleeve rips off, i slip, i fall the market's down like sixty stories and some don't end the way they should my silver spoon has fed me good a million one, a million cash close my eyes and feel the crash too many bottles of this wine we can't pronounce too many bowls of that green, no lucky charms the maids come around too much parents ain't around enough too many joy rides in daddy's jaguar too many white lies and white lines super rich kids with nothing but loose ends super rich kids with nothing but fake friends real love (ain't that something rare) i'm searching for a real love (talking 'bout real love) uh-uh (uh-uh) real love (real love, yeah) real love (real love) i'm searching for a real love (talkin' 'bout) real love, oh",
+    },
+    {
+      _id: 4,
       Title: 'Novacane',
       Album: 'Single',
       Genre: 'Pop',

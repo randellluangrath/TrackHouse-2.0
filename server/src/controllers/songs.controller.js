@@ -5,11 +5,6 @@ const getById = function (req, res) {
   res.send(songsService.getById(req.params._id));
 };
 
-// get all songs by artist id
-const getAllByArtistId = function (req, res) {
-  res.send(songsService.getAllByArtistId(req.params._id));
-};
-
 // true get all
 const getAll = function (req, res) {
   res.send(songsService.getAll());
@@ -17,6 +12,5 @@ const getAll = function (req, res) {
 
 module.exports = {
   getById,
-  getAllByArtistId,
   getAll,
 };
