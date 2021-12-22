@@ -11,11 +11,11 @@ const Banner = (props) => {
 };
 
 const contentStyle = {
-  height: '160px',
+  height: '400px',
   color: '#fff',
   lineHeight: '160px',
   paddingLeft: '50px',
-  background: '#364d79',
+  background: '#e28743',
 };
 
 export default Banner;

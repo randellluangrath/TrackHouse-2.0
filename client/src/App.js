@@ -9,7 +9,7 @@ const App = () => {
       title: 'Header',
     },
     footer: {
-      text: 'Footer',
+      text: 'Trackhouse-2.0',
     },
   };
 
