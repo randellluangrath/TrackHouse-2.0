@@ -1,6 +1,6 @@
 import React from 'react';
-import { Layout } from 'antd';
-import AppText from '../../typography/text/AppText';
+import { Layout } from '../../../antd';
+import AppText from '../../../typography/text/AppText';
 
 const { Footer } = Layout;
 

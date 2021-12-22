@@ -1,7 +1,7 @@
 import React from 'react';
-import { Layout } from 'antd';
+import { Layout } from '../../../antd';
 import './GeneralHeader.css';
-import AppTitle from '../../typography/title/AppTitle';
+import AppTitle from '../../../typography/title/AppTitle';
 
 const { Header } = Layout;
 

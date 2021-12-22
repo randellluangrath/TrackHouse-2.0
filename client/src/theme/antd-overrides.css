@@ -15,3 +15,7 @@
   bottom: 0;
   width: 100%;
 }
+
+.ant-col {
+  padding: 15px;
+}
