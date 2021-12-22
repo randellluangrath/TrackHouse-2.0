@@ -1,1 +1,4 @@
-export { default as GeneralLayout } from './general-layout';
+import Banner from './banner/Banner';
+import GeneralLayout from './general-layout/GeneralLayout';
+
+export { Banner, GeneralLayout };

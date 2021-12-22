@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import GeneralLayout from './shared/layout/general-layout/GeneralLayout';
+import { GeneralLayout } from './shared/layout';
 
 const App = () => {
   const layout = {
@@ -13,7 +13,9 @@ const App = () => {
   };
 
   return (
-    <GeneralLayout layout={layout}><p>Project Me</p></GeneralLayout>
+    <GeneralLayout layout={layout}>
+      <p>Project Me</p>
+    </GeneralLayout>
   );
 }
 
