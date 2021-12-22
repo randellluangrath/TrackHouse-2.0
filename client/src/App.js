@@ -3,8 +3,17 @@ import './App.css';
 import GeneralLayout from './shared/layout/general-layout/GeneralLayout';
 
 const App = () => {
+  const layout = {
+    header: {
+      title: 'Header',
+    },
+    footer: {
+      text: 'Footer',
+    },
+  };
+
   return (
-    <GeneralLayout generalHeader={true} content="" footer />
+    <GeneralLayout props={layout}><p>Project Me</p></GeneralLayout>
   );
 }
 
