@@ -9,8 +9,8 @@ const GeneralLayout = (props) => {
   const layout = props.layout;
   return (
     <Layout>
-      <GeneralHeader header={layout.header} />
-      <Banner>Artist Image</Banner>
+      {/* <GeneralHeader header={layout.header} /> */}
+      <Banner banner={layout.banner}></Banner>
       <GeneralContent>{props.children}</GeneralContent>
       <GeneralFooter footer={layout.footer} />
     </Layout>
