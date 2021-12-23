@@ -1,23 +1,22 @@
-import { Carousel } from '../../antd';
+import { Button } from '../../form';
+import { AppTitle } from '../../typography';
 
-const Banner = (props) => {
+const AppBanner = (props) => {
   const banner = props.banner;
+
+  const button = {
+    type: 'default',
+    label: 'Randomize Artist',
+    size: 'large',
+    ghost: true,
+  };
+
   return (
-    <Carousel>
-      <div>
-        <h1 style={contentStyle}>{banner.title}</h1>
-      </div>
-    </Carousel>
+    <div style={banner.contentStyle}>
+      <AppTitle title={banner.title} />
+      <Button button={button} />
+    </div>
   );
 };
 
-const contentStyle = {
-  fontWeight: '900',
-  height: '400px',
-  color: '#fff',
-  lineHeight: '160px',
-  paddingLeft: '50px',
-  background: '#e28743',
-};
-
-export default Banner;
+export default AppBanner;

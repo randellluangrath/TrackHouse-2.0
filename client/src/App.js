@@ -6,6 +6,7 @@ import { GeneralLayout } from './shared/layout';
 // TODO: Move amchart into own module
 import * as am4core from '@amcharts/amcharts4/core';
 import * as am4charts from '@amcharts/amcharts4/charts';
+import * as am4plugins_wordCloud from '@amcharts/amcharts4/plugins/wordCloud';
 import am4themes_animated from '@amcharts/amcharts4/themes/animated';
 
 am4core.useTheme(am4themes_animated);
@@ -16,7 +17,16 @@ const App = () => {
       title: 'Track House',
     },
     banner: {
-      title: 'Frank Ocean',
+      title: {
+        text: 'Frank Ocean',
+        level: 1,
+      },
+      contentStyle: {
+        fontWeight: '900',
+        height: '300px',
+        padding: '50px',
+        background: '#e28743',
+      },
     },
     footer: {
       text: 'Trackhouse-2.0',
@@ -25,56 +35,227 @@ const App = () => {
 
   return (
     <GeneralLayout layout={layout}>
-      <Row>
-        <Col span={24}>
-          <Card title='Most sang words'>
-            <MostUsedWordsChart />
-          </Card>
-        </Col>
-      </Row>
+      <div style={{ background: '#ECECEC', padding: '30px' }}>
+        <Row>
+          <Col span={12}>
+            <Card title='Word Frequency' bordered={true}>
+              <WordFrequencyChart />
+            </Card>
+          </Col>
+          <Col span={12}>
+            <Card title='Literary Device Frequency' bordered={true}>
+              <LiteraryDeviceFrequencyChart />
+            </Card>
+          </Col>
+        </Row>
+      </div>
     </GeneralLayout>
   );
 };
 
-const MostUsedWordsChart = () => {
+const WordFrequencyChart = (props) => {
   const chart = useRef(null);
 
   useLayoutEffect(() => {
-    let x = am4core.create('chartdiv', am4charts.XYChart);
+    const x = am4core.create(
+      'word-frequency-chart',
+      am4plugins_wordCloud.WordCloud
+    );
+    x.fontFamily = 'Courier New';
+    const series = x.series.push(new am4plugins_wordCloud.WordCloudSeries());
+    series.randomness = 0.1;
+    series.rotationThreshold = 0.5;
 
-    x.paddingRight = 20;
+    series.data = [
+      {
+        tag: 'javascript',
+        count: '1765836',
+      },
+      {
+        tag: 'java',
+        count: '1517355',
+      },
+      {
+        tag: 'c#',
+        count: '1287629',
+      },
+      {
+        tag: 'php',
+        count: '1263946',
+      },
+      {
+        tag: 'android',
+        count: '1174721',
+      },
+      {
+        tag: 'python',
+        count: '1116769',
+      },
+      {
+        tag: 'jquery',
+        count: '944983',
+      },
+      {
+        tag: 'ios',
+        count: '591410',
+      },
+      {
+        tag: 'css',
+        count: '574684',
+      },
+      {
+        tag: 'asp.net-mvc',
+        count: '178291',
+      },
+      {
+        tag: 'linux',
+        count: '173278',
+      },
+      {
+        tag: 'angular',
+        count: '154447',
+      },
+      {
+        tag: 'database',
+        count: '153581',
+      },
+      {
+        tag: 'wpf',
+        count: '147538',
+      },
+      {
+        tag: 'spring',
+        count: '147456',
+      },
+      {
+        tag: 'wordpress',
+        count: '145801',
+      },
+      {
+        tag: 'python-3.x',
+        count: '145685',
+      },
+      {
+        tag: 'vba',
+        count: '139940',
+      },
+      {
+        tag: 'string',
+        count: '136649',
+      },
+      {
+        tag: 'xcode',
+        count: '130591',
+      },
+      {
+        tag: 'windows',
+        count: '127680',
+      },
+      {
+        tag: 'reactjs',
+        count: '125021',
+      },
+      {
+        tag: 'vb.net',
+        count: '122559',
+      },
+      {
+        tag: 'html5',
+        count: '118810',
+      },
+      {
+        tag: 'laravel',
+        count: '109340',
+      },
+      {
+        tag: 'bash',
+        count: '108797',
+      },
+      {
+        tag: 'git',
+        count: '108075',
+      },
+      {
+        tag: 'oracle',
+        count: '106936',
+      },
+      {
+        tag: 'pandas',
+        count: '96225',
+      },
+    ];
 
-    let data = [];
-    let visits = 10;
+    series.dataFields.word = 'tag';
+    series.dataFields.value = 'count';
 
-    for (let i = 1; i < 366; i++) {
-      visits += Math.round((Math.random() < 0.5 ? 1 : -1) * Math.random() * 10);
-      data.push({
-        date: new Date(2018, 0, i),
-        name: 'name' + i,
-        value: visits,
-      });
-    }
+    series.heatRules.push({
+      target: series.labels.template,
+      property: 'fill',
+      min: am4core.color('#0000CC'),
+      max: am4core.color('#CC00CC'),
+      dataField: 'value',
+    });
 
-    x.data = data;
+    series.labels.template.url =
+      'https://stackoverflow.com/questions/tagged/{word}';
+    series.labels.template.urlTarget = '_blank';
+    series.labels.template.tooltipText = '{word}: {value}';
 
-    let dateAxis = x.xAxes.push(new am4charts.DateAxis());
-    dateAxis.renderer.grid.template.location = 0;
+    const hoverState = series.labels.template.states.create('hover');
+    hoverState.properties.fill = am4core.color('#FF0000');
 
-    let valueAxis = x.yAxes.push(new am4charts.ValueAxis());
-    valueAxis.tooltip.disabled = true;
-    valueAxis.renderer.minWidth = 35;
+    chart.current = x;
+    return () => {
+      x.dispose();
+    };
+  }, []);
 
-    let series = x.series.push(new am4charts.LineSeries());
-    series.dataFields.dateX = 'date';
-    series.dataFields.valueY = 'value';
-    series.tooltipText = '{valueY.value}';
-    x.cursor = new am4charts.XYCursor();
+  return (
+    <div
+      id='word-frequency-chart'
+      style={{ width: '100%', height: '500px' }}></div>
+  );
+};
 
-    let scrollbarX = new am4charts.XYChartScrollbar();
-    scrollbarX.series.push(series);
-    x.scrollbarX = scrollbarX;
+const LiteraryDeviceFrequencyChart = (props) => {
+  const chart = useRef(null);
 
+  useLayoutEffect(() => {
+    var x = am4core.create('literary-device-frequency-chart', am4charts.PieChart);
+
+    x.hiddenState.properties.opacity = 0; // this creates initial fade-in
+
+    x.data = [
+      {
+        country: 'Alliteration',
+        value: 260,
+      },
+      {
+        country: 'Irony',
+        value: 230,
+      },
+      {
+        country: 'Simile',
+        value: 200,
+      },
+      {
+        country: 'Metaphor',
+        value: 165,
+      },
+      {
+        country: 'Rhyme',
+        value: 139,
+      },
+    ];
+
+    var series = x.series.push(new am4charts.PieSeries());
+    series.dataFields.value = 'value';
+    series.dataFields.radiusValue = 'value';
+    series.dataFields.category = 'country';
+    series.slices.template.cornerRadius = 6;
+    series.colors.step = 3;
+
+    series.hiddenState.properties.endAngle = -90;
     chart.current = x;
 
     return () => {
@@ -82,7 +263,10 @@ const MostUsedWordsChart = () => {
     };
   }, []);
 
-  return <div id='chartdiv' style={{ width: '100%', height: '500px' }}></div>;
+  return (
+    <div
+      id='literary-device-frequency-chart'
+      style={{ width: '100%', height: '500px' }}></div>
+  );
 };
-
 export default App;

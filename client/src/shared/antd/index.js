@@ -1,3 +1,3 @@
-import { Layout, Carousel, Card, Row, Col } from 'antd';
+import { Layout, Card, Row, Col, Button } from 'antd';
 
-export { Layout, Carousel, Card, Row, Col };
+export { Layout, Card, Row, Col, Button };
