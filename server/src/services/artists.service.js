@@ -2,6 +2,19 @@ const data = require('../data');
 
 const songsService = require('./songs.service');
 
+const searchArtists = function (req) {
+  console.log(req);
+  return data.Artists;
+}
+
+const getArtists = function () {
+  return data.Artists; 
+}
+
+const getArtistById = function (_id) {
+  return getArtists().find((artist) => artist._id == _id);
+}
+
 const getSongsByArtistId = function (_id) {
   const songs = songsService.getAll();
 
@@ -13,5 +26,8 @@ const getSongsByArtistId = function (_id) {
 };
 
 module.exports = {
+  searchArtists,
+  getArtists,
+  getArtistById,
   getSongsByArtistId,
 };

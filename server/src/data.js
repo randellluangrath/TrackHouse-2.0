@@ -14,6 +14,20 @@ module.exports = {
         last: 'Malone',
       },
     },
+    {
+      _id: '2',
+      name: {
+        first: 'Harry',
+        last: 'Styles',
+      },
+    },
+    {
+      _id: '3',
+      name: {
+        first: 'Charlie',
+        last: 'Puth',
+      },
+    },
   ],
   Songs: [
     {
