@@ -5,6 +5,7 @@ const AppButton = (props) => {
   // size: small or large, small by default
   return (
     <Button
+      onClick={props.onClick}
       ghost={button.ghost}
       size={button.size ?? 'small'}
       type={button.type}>

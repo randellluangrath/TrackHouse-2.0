@@ -16,18 +16,6 @@ const App = () => {
     header: {
       title: 'Track House',
     },
-    banner: {
-      title: {
-        text: 'Frank Ocean',
-        level: 1,
-      },
-      contentStyle: {
-        fontWeight: '900',
-        height: '300px',
-        padding: '50px',
-        background: '#e28743',
-      },
-    },
     footer: {
       text: 'Trackhouse-2.0',
     },
@@ -221,7 +209,10 @@ const LiteraryDeviceFrequencyChart = (props) => {
   const chart = useRef(null);
 
   useLayoutEffect(() => {
-    var x = am4core.create('literary-device-frequency-chart', am4charts.PieChart);
+    var x = am4core.create(
+      'literary-device-frequency-chart',
+      am4charts.PieChart
+    );
 
     x.hiddenState.properties.opacity = 0; // this creates initial fade-in
 
